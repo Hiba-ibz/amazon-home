@@ -1,0 +1,1204 @@
+body{
+margin: 0;
+font-family: Arial, sans-serif;
+padding: 0;
+}
+.top-header{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    position: static;
+    float: none;
+}
+   
+
+.top-bar{
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.top-list {
+    list-style-type: none;
+    background-color: black; 
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+/* --------------amazon image -------------------------------*/
+.image-item , .loca-item{
+    border: none;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+.image-item{
+    margin-left: 6px;
+}
+.image-item img { 
+    height: 44px;
+    width: 124px;
+    position: static;
+    margin-top: 5px;
+    padding-left: 10px;
+    margin-right: 5px;
+}
+.image-item:hover  {
+    border:1px solid white; 
+    margin-left: 2px;
+    margin-top: 2px;
+}
+
+/* --------------amazon location -------------------------------*/
+
+.loca-img img{
+    margin: 2px;
+    margin-top: 1px;
+    padding: 4px 0 0 0;
+    height: 20px;
+    width: 20px;
+    position: relative;
+    border-color: aquamarine;
+    color: white;
+}
+.loca-item:hover  {
+    border: 0.5px solid white; 
+}
+.loca-p{
+    width: 142px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 20px;
+}
+.loca-item {
+    color: #fffefe;
+    display: flex;
+    font-size: 14px;
+    margin: 0px 8px 0px 8px
+}
+.loca-item a {
+    text-decoration: none; /* Removes underline from the link */
+    color: inherit;        /* Ensures the link inherits color from its parent */
+}
+.loca-p span{
+color: #D4D4D4;
+font-size: 12px;
+width: 162%;
+}
+
+/* --------------amazon search -------------------------------*/
+
+
+.search-container {
+    display: flex;
+    align-items: center;
+    height: 42px;
+    margin-top: 10px;
+}
+
+.search-bar .search {
+    width: 60px;
+    height: 100%;
+    font-size: 14px;
+    background-color: #D4D4D4;
+    border: none;
+    padding-left: 8px;
+}
+
+.search-bar{
+    list-style-type: none;
+}
+
+.search-container input[type="search"] {
+    width: 700px;
+    height: 100%;
+    font-size: 16px;
+    padding-left: 10px;
+    border: none;
+    box-sizing: border-box;
+}
+
+.search-container .icon img {
+    height: 53%;
+    padding: 10px;
+    background-color: #f6a63d;
+    border-radius: 4px;
+    margin-left: -1px; /* To align with the search box */
+    border: none;
+    margin-top: 0.6px;
+    cursor: pointer;
+}
+
+/* --------------amazon location -------------------------------*/
+
+.lang-img{
+    width: 20px;
+    background-color: none;
+    margin-right: 3px;
+}
+.lang-sele button{
+    border: none;
+    display: flex;
+    margin-left: 768px;
+    background-color: #111;
+    color: white;
+    margin-top: 23px;
+    padding: 0;
+}
+.lang-sele b{
+    margin-top: 4px;
+}
+
+
+/* --------------language selection  -------------------------------*/
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+        margin-left: 24px;
+    margin-top: 20px;
+    
+}
+.dropdown:hover  {
+    border: 0.5px solid white; 
+}
+.dropbtn {
+    background-color: black;
+    color: white; 
+    border: none; 
+    font-weight: 550;
+    padding: 6px 10px; 
+    font-size: 13px; 
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.dropbtn img {
+    width: 20px; 
+    margin-right: 6px; 
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:white;
+    min-width: 201px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+    z-index: 1; 
+    border-radius: 5px; 
+    font-size: 14px;
+}
+
+
+.dropdown-content label {
+    display: block;
+    padding: 2px;
+    cursor: pointer;
+}
+.dropdown-content img{
+    width: 13px; 
+    margin-right: 3px; 
+}
+
+
+
+/* -------------- Account sign-in -------------------------------*/
+
+.account-sign {
+    position: relative;
+    display: inline-block;
+    margin-left: 19px;
+}
+.account-sign:hover  {
+    border: 0.5px solid white; 
+    margin-top: 1px;
+}
+.button-sign{
+    margin-top: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1px;
+    color: #3b3b3bc4;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+.accountbtn-sign {
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    width: 127px;
+    cursor: pointer; 
+    border-radius: 5px; 
+    text-align: left; 
+    display: flex;
+    line-height: 1.8px;
+    cursor: pointer; 
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    border: none;
+}
+.account-content-sign {
+    display: none;
+    position: absolute;
+    top: 100%;
+    color: #3b3b3bc4;
+    right: 0;
+    font-size: 14px;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+    width: 400px;
+    z-index: 1;
+}
+
+.button-sign {
+    margin-bottom: 10px; 
+}
+.button-sign button{
+    background-color: #FFD814;
+    padding: 10px 70px 10px 70px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+}
+.section-container {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.list-sign,
+.your-account {
+    width: 48%; 
+}
+
+.list-sign label,
+.your-account label {
+    display: block; 
+    margin: 5px 0; 
+}
+.list-sign span,
+.your-account span {
+    color: #1371C5; 
+    font-weight: bold; 
+}
+
+
+/* -------------- return and order -------------------------------*/
+
+.return-order {
+    position: relative;
+    display: inline-block;
+    left: 10px;
+    margin-left: 20px;
+}
+.return-order button{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: left;
+    display: flex;
+    line-height: 16px;
+    border: 0;
+    width: 75px;
+    padding: 0;
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.return-orderbtn a {
+    text-decoration: none; 
+    padding-top: 4px;
+    color: white;        
+    font-size: 12px;       
+}
+.return-order:hover  {
+    border: 0.5px solid white; 
+    margin-top: 1px;
+}
+
+/* -------------- cart order -------------------------------*/
+
+.cart-order {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-left: 24px;  
+}
+.cart-orderbtn {
+    position: relative; 
+    border: none;
+    right: 12px;
+    top: 2px;
+    background: transparent; 
+}
+
+.cart-order:hover  {
+    border: 0.5px solid white; 
+    z-index: 1;
+}
+.cart-orderbtn img {
+    display: block;
+    width: 54px; 
+    height: 40px;
+}
+
+.cart-orderbtn span {
+    position: absolute; 
+    top: -1px; 
+       right: 18px; 
+    background-color: #111;
+    border-radius: 90%; 
+    width: 20px; 
+    height: 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px; 
+    font-weight: 700;
+}
+
+/* ------------------------- menu bar -------------------------------*/
+
+.second-nav {
+    background-color: #232F3E;
+    padding: 10px;
+}
+.all-menu {
+    position: relative;
+    display: inline-block;
+    padding-left: 20px;
+}
+.menu-all{
+    font-size: 14px;
+    margin-top: 6px;
+}
+.all-dropdownbtn {
+    background-color: #232F3E;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.all-dropdownbtn img {
+    height: 20px;
+    margin-right: 4px;
+}
+.all-dropdown-content {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: #f9f9f9;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    background-color: #f9f9f9;
+    min-width: 320px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.all-dropdown-content li{
+    text-decoration: none;
+    list-style-type: none;
+    line-height: 40px;
+}
+.all-dropdown-content a {
+    color: black;
+    text-decoration: none;
+}
+.all-dropdown-content a:hover {
+    background-color: #ddd;
+}
+.dropdown-Sign-in a{
+    font-weight: 600;
+    margin: -10px -10px 10px;
+    position: sticky;
+    top: 0;
+    line-height: 10px;
+    background-color: #232F3E;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    padding: 11px 100px 20px 90px;
+}
+.dropdown-heading {
+    font-weight: bold;
+    font-size: 14px;
+    margin: -10px 10px 10px;
+}
+.dropdown-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.dropdown-content ul li {
+    padding: 8px 0;
+    list-style-type: none;
+}
+.dropdown-content ul li a {
+    color: black;
+    list-style-type: none;
+}
+.all-menu:hover .all-dropdown-content {
+    display: block;
+}
+.all-menu:hover  {
+    border: 1px solid white; 
+    padding-left: 12px; 
+    padding-right: 12px; 
+}
+
+/* ------------------------- amazon fresh -------------------------------*/
+
+.amazon-fresh {
+    position: relative;
+    display: inline-block;
+    bottom: 3px;
+    padding-left: 20px;
+    font-weight: 500;
+}
+.amazon-freshbtn {
+    background-color: #232F3E;
+    color: white;
+    border: none;
+    cursor: pointer;
+    top: 2px;
+    font-size: 14px;
+}
+.amazon-fresh-content {
+    display: none;
+    position: absolute;
+    top: 50px; 
+    left: 0;
+    background-color: #fff;
+    min-width: 400px; 
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.amazon-fresh-text {
+    margin-bottom: 10px;
+}
+.amazon-fresh-text p {
+    margin: 0;
+    font-weight: bold;
+}
+.amazon-fresh-img1 {
+    display: flex;
+    gap: 5px; 
+}
+
+ .fresh-2 img{
+    margin-top: 20px; 
+}
+.amazon-fresh-img1 a {
+    flex: 1;
+}
+.amazon-fresh-img1 img {
+    width: 100%; 
+    height: auto;
+    display: block; 
+}
+.amazon-fresh:hover .amazon-fresh-content {
+    display: block;
+}
+.fresh-para a{
+    font-size: 12px;
+    color: #2f687f;
+}
+.amazon-fresh:hover  {
+    border: 1px solid white; 
+    padding-left: 12px; 
+    padding-right: 12px; 
+}
+
+/* ------------------------- amazon miniTV -------------------------------*/
+
+.amazon-minitv {
+    position: relative;
+    display: inline-block;
+    bottom: 3px;
+    font-weight: 500;
+    border: none;
+    padding-left: 20px;
+}
+.amazon-tvbtn {
+    border: none;
+    cursor: pointer;
+    top: 2px;
+    background-color: #232F3E;
+    font-size: 14px;
+}
+.amazon-minitv a{
+    text-decoration: none;
+    color: white;
+    border: none;
+}
+.amazon-minitv:hover  {
+    border: 1px solid white; 
+    padding-left: 12px; 
+    padding-right: 12px; 
+}
+
+/* ------------------------- amazon Sell -------------------------------*/
+
+.amazon-sell {
+    position: relative;
+    display: inline-block;
+    bottom: 3px;
+    font-weight: 500;
+    border: none;
+    padding-left: 20px;
+}
+.amazon-sellbtn {
+    border: none;
+    cursor: pointer;
+    top: 2px;
+    background-color: #232F3E;
+    font-size: 14px;
+}
+.amazon-sell a{
+    text-decoration: none;
+    color: white;
+    border: none;
+}
+.amazon-sell:hover  {
+    border: 1px solid white; 
+    padding-left: 12px; 
+    padding-right: 12px; 
+}
+
+/* ------------------------- Best Sellers -------------------------------*/
+
+.best-sell {
+    position: relative;
+    display: inline-block;
+    bottom: 3px;
+    font-weight: 500;
+    padding-left: 20px;
+    border: none;
+}
+.best-sellbtn {
+    border: none;
+    cursor: pointer;
+    top: 2px;
+    background-color: #232F3E;
+    font-size: 14px;
+}
+.best-sell a{
+    text-decoration: none;
+    color: white;
+    border: none;
+}
+.best-sell:hover  {
+    border: 1px solid white; 
+    padding-left: 12px; 
+    padding-right: 12px; 
+}
+
+/* ------------------------- Todays Deal-------------------------------*/
+
+.today-deal {
+    position: relative;
+    display: inline-block;
+    bottom: 3px;
+    padding-left: 20px;
+    font-weight: 500;
+    border: none;
+}
+.today-dealbtn {
+    border: none;
+    cursor: pointer;
+    top: 2px;
+    background-color: #232F3E;
+    font-size: 14px;
+}
+.today-deal a{
+    text-decoration: none;
+    color: white;
+    border: none;
+}
+.today-deal:hover  {
+    border: 1px solid white; 
+    padding-left: 12px; 
+    padding-right: 12px; 
+}
+
+
+/* ------------------------- Mobiles-------------------------------*/
+
+.mobiles {
+    position: relative;
+    display: inline-block;
+    padding-left: 20px;
+    bottom: 3px;
+    font-weight: 500;
+    border: none;
+}
+.mobiles-btn {
+    border: none;
+    cursor: pointer;
+    top: 2px;
+    background-color: #232F3E;
+    font-size: 14px;
+}
+.mobiles a{
+    text-decoration: none;
+    color: white;
+    border: none;
+}
+
+.mobiles:hover  {
+    border: 1px solid white; 
+    padding-left: 12px; 
+    padding-right: 12px; 
+}
+
+/* ------------------------- Festival-------------------------------*/
+
+.festival {
+    position: relative;
+    display: inline-block;
+    bottom: 7px;
+    font-weight: 500;
+    border: none;
+    float: right;
+    padding-left: 150px;
+}
+.festival-btn {
+    border: none;
+    cursor: pointer;
+    top: 1px;
+    background-color: #232F3E;
+    font-size: 14px;
+    
+    padding-left: 150px;
+}
+
+.festival-btn img{
+    width: 190px;
+    padding-left: 40px;
+}
+.festival a{
+    text-decoration: none;
+    color: white;
+    border: none;
+}
+
+.festival:hover  {
+    border:.5px solid white; 
+    padding: 0; 
+}
+
+/* -------------- offers day-------------------------------*/
+
+.main-content{
+padding: 0;
+border: 0;
+    background-color: #E3E6E6;
+}
+.slide-img img{
+    width: 1585px;
+    height: 300px;
+}
+.slide-img{
+    padding: 0;
+    margin: 0%;
+    border: 0;
+    left: 0;
+}
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100.3%;
+    margin-left: -6px;
+}
+
+.carousel-inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    width: 100%;
+}
+
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.column-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    grid-column: 4;
+    grid-row: 1 / span 2;
+}
+
+.column-item {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    
+}
+.carousel-item img[src*="contain-img1.png"]{
+    width: 357px;
+    position: static;
+   }
+.carousel-item img[src*="contain-img2.png"]{
+    width: 357px;
+    position: static;
+   }
+.carousel-item img[src*="contain-img3.png"]{
+ width: 357px;
+ position: static;
+}
+.column-item img {
+    width: 90%;
+    height: 80%;
+}
+.column-item img[src*="contain-img4.png"]{
+    margin-bottom: 0;
+    width: 105%;
+    height: 80%;
+    padding-right: 20px;
+}
+.column-item img[src*="contain-img5.png"] {
+    object-fit: cover;
+    display: block;
+    margin-bottom: 0;
+    width: 98%;
+    height: 82%;
+    
+    padding-right: 20px;
+}
+
+/*--------------------------Blockbuster deals---------------------*/
+
+.deals {
+    margin-left: 12px;
+    background-color: white;
+    margin-right: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0%;
+}
+.deal-text p{
+    font-weight: 600;
+font-size: 18px;
+}
+.deal-text{
+    padding-left: 20px;
+}
+.deal-text span{
+    font-size: 14px;
+    flex-direction: row;
+    margin-top: 4px;
+    padding-left: 10px;
+    color: #056576;
+}
+
+.deals-container {
+    gap: 10px;
+    width: 97%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-left: 4px;
+}
+.second-deals-container{
+    gap: 10px;
+    width: 97%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-left: 4px;
+}
+.deals-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column; 
+    text-align: center; 
+    background-color: #F7F8F8;
+}
+
+.deal-text p,
+.deal-text span {
+    display: inline-block;
+    vertical-align: middle; /* Aligns items vertically centered */
+}
+.deals-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.deals-item img[src*="mobile-deals.jpg"]{
+    max-width: min-content;
+    position: static;
+    margin: 0;
+   }
+   .deals-item img[src*="dell-deals.jpg"]{
+    max-width: min-content;
+    position: static;
+   }
+   .deals-item img[src*="hp-deals.webp"]{
+    max-width: min-content;
+    position: static;
+   }
+   .deals-item img[src*="xiomi-deals.jpg"]{
+    max-width: min-content;
+    position: static;
+   }
+   .deals-item img[src*="hp1-deals.jpg"]{
+    max-width: min-content;
+    position: static;
+   }
+   .deals-item img[src*="safari-deals.jpg"]{
+    max-width: fit-content;
+    position: static;
+    }
+
+    .offer{
+color: white;
+background-color: #CC0C39;
+font-size: 12px;
+padding: 6px;
+border-radius: 2px;
+    }
+.deal-offer{
+    font-size: 12px;
+    font-weight:  bold;
+    color: #CC0C39;
+}
+.dollar{
+    font-size: 14px;
+    top: 0px;
+}
+.mrp{
+    font-size: 13px;
+    color: #565959;
+}
+.del{
+    font-size: 13px;
+    color: #565959;
+    text-decoration: line-through;
+}
+.price-container sup{
+    font-size: 9px;
+}
+.deal-title{
+    font-size: 11px;
+}
+.price-of-deal{
+    text-align: left;
+    padding-left: 10px;
+}
+.price-container{
+    line-height: 0px;
+}
+
+/*-----------------trending-deals--------------------------------------*/
+.trending-deals{
+    margin-left: 12px;
+    margin-top: 2%;
+    background-color: white;
+    margin-right: 25px;
+    font-family: Arial, Helvetica, sans-serif;   
+}
+
+.deals-item img[src*="trending-detergent.jpg"]{
+    max-width: min-content;
+    position: static;
+    margin-bottom: 3%;
+   }
+   .deals-item img[src*="trending-presto.jpg"]{
+    max-width: min-content;
+    position: static;
+    margin-bottom: 3%;
+   }
+   .deals-item img[src*="trending-bag.jpg"]{
+    max-width: min-content;
+    position: static;
+    margin-bottom: 3%;
+   }
+   .deals-item img[src*="trending-trolley.jpg"]{
+    max-width: min-content;
+    position: static;
+    margin-bottom: 3%;
+   }
+   .deals-item img[src*="trending-machine.jpg"]{
+    max-width: min-content;
+    position: static;
+    margin-bottom: 3%;
+   }
+   .deals-item img[src*="trending-shakthi.jpg"]{
+    max-width: fit-content;
+    position: static;
+    margin-bottom: 3%;
+    }
+
+
+/*-------------- beauty and makeup sttart------------------*/
+
+.beauty-makeup-deals{
+    margin-left: 12px;
+    margin-top: 2%;
+    background-color: white;
+    margin-right: 25px;
+    font-family: Arial, Helvetica, sans-serif;   
+}
+.deals-container {
+    gap: 10px;
+    width: 99.6%;
+    display: flex;
+    overflow: hidden;
+    margin-left: 4px;
+    align-items: flex-start;
+}
+.deals-item img[src*="beauty-lakme.jpg"]{
+    width: 322px;
+    position: static;
+    margin-bottom: 3%;
+   }
+   .deals-item img[src*="beauty-sunscreen.jpg"]{
+    width: 360px;
+    height: 350px;
+    position: static;
+   }
+   .deals-item img[src*="beauty-maybellin.jpg"]{
+    width: 340px;
+    position: static;
+    margin-bottom: 3%;
+   }
+   .deals-item img[src*="beauty-moisturizer.jpg"]{
+    width: 375px;
+    height: 346px;
+    position: static;
+    margin-bottom: 3%;
+   }
+   .deals-item img[src*="beauty-ipstick.jpg"]{
+    width: 420px;
+    position: static;
+    height: 364px;
+    margin-bottom: 3%;
+   }
+   .deals-item img[src*="beauty-eyeliner.jpg"]{
+    width: 365px;
+    position: static;height: 340px;
+    margin-bottom: 3%;
+    }
+    .deals-item img[src*="beauty-mascara.jpg"]{
+        width: 375px;
+        height: 350px;
+        position: static;
+        margin-bottom: 3%;
+       }
+       .deals-item img[src*="beauty-eyegel.jpg"]{
+        width: 375px;
+        height: 330px;
+        position: static;
+        margin-bottom: 3%;
+       }
+       
+       /*-------------- collasch sttart------------------*/
+       
+     .carousel-item img[src*="bottom-collache1.png"]{
+        width: 357px;
+        margin-top: 20px;
+        position: static;
+       }
+       .carousel-item img[src*="bottom-collache2.png"]{
+        width: 358px;
+        position: static;
+        margin-top: 24px;
+       }
+    .carousel-item img[src*="bottom-collache3.png"]{
+        width: 357px;
+        margin-top: 26px;
+        position: static;
+       }
+    .carousel-item img[src*="bottom-collache4.png"]{
+     width: 352px;
+     margin-top: 28px;
+     position: static;
+    }
+
+
+    .browsing-deals{
+        margin-left: 12px;
+        margin-top: 2%;
+        background-color: white;
+        margin-right: 25px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    }
+    
+    .small-para{
+    color: #046272;
+    font-size: 14px;
+    text-align: left;
+    }
+    .small-para img{
+        width: 60px;
+        padding: 1px;
+        padding-right: 6px;
+        padding-bottom: 4px;
+    }
+.number{
+display: flex;
+
+}
+.browser-title{
+     font-size: 12px;
+    text-align: left;
+    line-height: 19px;
+}
+.browsing-of-deal{
+    text-align: left;
+}
+    .deals-item img[src*="browsing-lipstick.webp"]{
+        max-width: min-content;
+        position: static;
+        margin-bottom: 3%;
+       }
+    
+       .deals-item img[src*="browsing-maskara.jpg"]{
+        width: 237px;
+        position: static;
+       }
+       .deals-item img[src*="browsing-pensil.jpg"]{
+        width: 81%;
+        position: static;
+        margin-bottom: 3%;
+        margin-top: 50px;
+       }
+       .deals-item img[src*="browsing-camera.jpg"]{
+        width: 81%;
+        position: static;
+        margin-bottom: 3%;
+        margin-top: 16px;
+       }
+       .deals-item img[src*="browsing-newyork.webp"]{
+        width: 100%;
+        position: static;
+        margin-bottom: 3%;
+        margin-top: 17px;
+       }
+       .deals-item img[src*="browsing-mouse.jpg"]{
+       width: 80%;
+       margin-top: 34px;
+        position: static;
+        margin-bottom: 3%;
+        }
+        .deals-item img[src*="browsing-toy.jpg"]{
+            width: 80%;
+            margin-top: px;
+             position: static;
+             margin-bottom: 3%;
+             }
+
+
+       /*--------------end-sign-----------------*/
+
+        .end-sign{
+            text-align: center;
+            padding-top: 10px;
+            line-height: 28px;
+            background-color: white;
+
+        }
+.sign-span1{
+    font-size: 16px;
+}
+.end-sign button{
+padding-left: 120px;
+padding-right: 120px;
+padding-top: 10px;
+padding-bottom: 10px;
+font-size: 14px;
+border-color: #FFCC4B;
+border-radius: 7px;
+background-color: #f2bf3c;
+font-weight: bold;
+
+}
+.sign-customer{
+    font-size: 12px;
+}
+.give-padding{
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+
+
+/* -------------- footer starts here -------------------------------*/
+
+.footer {
+     background-color: #232F3E;
+    color: white; 
+    display: flex;
+    justify-content: space-around; 
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 15px;
+}
+
+.footer-section h4 {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
